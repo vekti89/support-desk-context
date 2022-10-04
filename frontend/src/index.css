@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+  --gold: rgb(211, 191, 12);
+  --goldish: rgba(211, 191, 12, 0.75);
+  --light: rgb(189, 184, 148);
+  --bg: #3a372a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--goldish);
+  margin-bottom: 60px;
+}
+
+.header .logo a {
+  color: var(--gold);
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+  color: var(--gold);
+}
+
+.header ul li a:hover {
+  color: var(--goldish);
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: var(--light);
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.boxes div {
+  padding: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+.boxes h2 {
+  margin-top: 20px;
+}
+
+.boxes a:hover {
+  color: #777;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  background-color: var(--light);
+  outline-style: none;
+  color: var(--bg);
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+  color: var(--gold);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  background: var(--goldish);
+  color: var(--bg);
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--bg);
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 7px 15px;
+  font-size: 13px;
+}
+
+.btn-danger {
+  background: rgb(182, 91, 91);
+  border: none;
+}
+
+.btn-back {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: var(--gold);
+}
+
+.ticket-created {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 50px;
+}
+.ticket-smaller {
+  font-size: 0.9rem;
+}
+.ticket-number {
+  margin-bottom: 30px;
+}
+
+.ticket-number h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.ticket-number p {
+  font-size: 1.3rem;
+}
+
+.ticket-info {
+  font-size: 1.3rem;
+}
+
+.ticket,
+.ticket-headings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: var(--light);
+  color: var(--bg);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ticket-headings {
+  font-weight: 600;
+  background-color: var(--goldish);
+}
+
+.ticket-header h4 {
+  color: var(--light);
+}
+.ticket-header hr {
+  border: 1px solid var(--goldish);
+}
+
+.status {
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.9);
+  width: 100px;
+  padding: 5px 15px;
+  justify-self: center;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.status-new {
+  background-color: rgb(47, 88, 47);
+}
+
+.status-open {
+  background-color: rgb(52, 87, 116);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.status-closed {
+  background-color: rgb(119, 38, 38);
+}
+
+.ticket-page {
+  position: relative;
+  text-align: left;
+}
+
+.ticket-page h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticket-page .btn {
+  margin-bottom: 30px;
+}
+
+.ticket-page .btn-block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ticket-desc {
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: var(--light);
+  border: 1px var(--light) solid;
+  color: var(--bg);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.ticket-desc h4 {
+  color: var(--bg);
+}
+
+.note {
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.note-head {
+  background: #f4f4f4;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.note-date {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.delete-note {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: var(--light);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  color: var(--gold);
+  transform: scale(0.98);
+}
+
+p.status-in-progress {
+  color: orangered;
+}
+
+p.status-waiting {
+  color: red;
+}
+
+p.status-ready {
+  color: steelblue;
+}
+
+p.status-complete {
+  color: green;
+}
+
+footer {
+  position: sticky;
+  top: 95vh;
+  text-align: center;
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .ticket-created h2,
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input,
+  textarea,
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
