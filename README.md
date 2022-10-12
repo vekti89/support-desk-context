@@ -1,4 +1,4 @@
-# support_desk_redux
+# support_desk_context
 
 This project is fullstack support ticket system.
 
@@ -10,6 +10,6 @@ Application provides an interface for users to register and open and manage thei
 - Mongo DB Atlas with Mongoose ODM
 - JWT authentication
 - User interface built in React
-- Redux Toolkit state manager
+- State management using useContext and useReducer
 
 The project is deployed to Heroku.
